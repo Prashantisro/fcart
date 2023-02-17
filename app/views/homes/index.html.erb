@@ -58,3 +58,107 @@ onclick="document.getElementById('demo').innerHTML = Date()">
 Display the Current time-date</button>
 
 <p id="demo"></p>
+
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://rukminim1.flixcart.com/image/200/200/water-purifier/9/8/f/-1000x1000-imaemtfnd5yvrx98.jpeg?q=90" style="width:100%">
+    <img src="https://rukminim1.flixcart.com/image/612/612/l1pc3gw0/shopsy-mobile-holder/i/m/g/stand-height-adjustable-and-angle-adjustable-telescopic-florican-original-imagd7knfxhuggyc.jpeg?q=70" style="width:100%">
+    <img src="https://rukminim1.flixcart.com/image/612/612/kiqbma80-0/memory-card/microsdhc/u/r/e/sdsdqm-032g-b35-sdsqbnn-032g-go31n-sandisk-original-imafygbgjupug9gn.jpeg?q=70" style="width:100%">
+    <img src="https://rukminim1.flixcart.com/image/612/612/k5o7r0w0/data-cable/usb-type-c-cable/b/9/d/stuffcool-4-in-1-cable-1m-usb-to-micro-usb-to-c-type-c-to-c-c-to-original-imafzakgf8qfux72.jpeg?q=70" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://rukminim1.flixcart.com/image/612/612/kynb6vk0/monitor/1/n/s/lf22t354fhwxxl-full-hd-22-lf22t354fhwxxl-samsung-original-imagats2rjbg9uhv.jpeg?q=70" style="width:80%">
+    <img src="https://rukminim1.flixcart.com/image/612/612/kppt47k0/mouse/g/t/e/wired-mouse-qhm-224d-quantum-original-imag3vv5eer933fe.jpeg?q=70" style="width:50%">
+    <img src="https://rukminim1.flixcart.com/image/612/612/kfsl18w0/pendrive/pendrive/z/x/v/hp-v236w-original-imafw69vquvef7ub.jpeg?q=70" style="width:50%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/falls2.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/w3images/nature.jpg" style="width:100%">
+    <img src="/w3images/mist.jpg" style="width:100%">
+    <img src="/w3images/paris.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+    <img src="/w3images/ocean.jpg" style="width:100%">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+    <img src="/w3images/mountainskies.jpg" style="width:100%">
+    <img src="/w3images/rocks.jpg" style="width:100%">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
+
