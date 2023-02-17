@@ -1,0 +1,15 @@
+<h3>Hello Techwinners</h3><br>
+<h3>Welcome to Flipkart-Portal</h3>
+<%#= image_tag asset_url('Bgimages.jpeg') %>
+
+<div class="profilepage"> 
+<h4>Login by</h4><br/>
+<h5>
+<% if user_signed_in? %>
+Name: <%= current_user.name %><br/><br/>
+Email-Id: <%= current_user.email %><br/><br/>
+Birthday: <%= current_user.date_of_birth %><br/><br/>
+Phone No.:<%= current_user.phone_number%><br/><br/>
+Gender.:<%= current_user.gender%></h5>
+<% end %>
+</div>
