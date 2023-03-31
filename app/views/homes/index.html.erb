@@ -58,3 +58,215 @@ onclick="document.getElementById('demo').innerHTML = Date()">
 Display the Current time-date</button>
 
 <p id="demo"></p>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  margin-bottom: 16px;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: yellowgreen;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<h2>Products Grid</h2>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/kiqbma80-0/memory-card/microsdhc/u/r/e/sdsdqm-032g-b35-sdsqbnn-032g-go31n-sandisk-original-imafygbgjupug9gn.jpeg?q=70" style="width:58%">
+      <div class="container">
+        <h2>HD Card</h2>
+        <p class="title">Price $5.99</p>
+        <p>hdcard@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+        <%= button_to "Buy now", cart_path(:products) %>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/200/200/water-purifier/9/8/f/-1000x1000-imaemtfnd5yvrx98.jpeg?q=90" style="width:43%">
+      <div class="container">
+        <h2>Bottle Jar</h2>
+        <p class="title">Price $10.99</p>
+        <p>bottle@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/l1pc3gw0/shopsy-mobile-holder/i/m/g/stand-height-adjustable-and-angle-adjustable-telescopic-florican-original-imagd7knfxhuggyc.jpeg?q=70" style="width:44%">
+      <div class="container">
+        <h2>Mobile Stand</h2>
+        <p class="title">Price $10.55</p>
+        <p>mobile@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/pump/2/l/h/air-pump-double-action-1556a-strauss-original-imaggarbu6fsmxe6.jpeg?q=70" style="width:30%">
+      <div class="container">
+        <h2>Bycycle Air Pump</h2>
+        <p class="title">Price $10.55</p>
+        <p>bycycle@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>  
+    <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/kwwfte80/helmet/x/d/h/sba-7-7wings-isi-certified-flip-up-helmet-for-men-and-women-1-original-imag9hfqgu6gsjjc.jpeg?q=70" style="width:40%">
+      <div class="container">
+        <h2>Helmet</h2>
+        <p class="title">Price $10.55</p>
+        <p>helmet@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>  
+      <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/ktq4l8w0/ceiling-lamp/m/3/g/1-7-5-3-50-mini-fan-blade-5-led-panels-viraan-original-imag7y7brjphfs5g.jpeg?q=70" style="width:70%">
+      <div class="container">
+        <h2>LED Bulb</h2>
+        <p class="title">Price $10.55</p>
+        <p>ledbulb@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/ksxjs7k0/mouse/n/5/l/zeb-rise-zebronics-original-imag6duduz5gvhhz.jpeg?q=70"  style="width:75%">
+      <div class="container">
+        <h2>Mouse</h2>
+        <p class="title">Price $5.99</p>
+        <p>mouse@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src= "https://rukminim1.flixcart.com/image/612/612/kynb6vk0/monitor/1/n/s/lf22t354fhwxxl-full-hd-22-lf22t354fhwxxl-samsung-original-imagats2rjbg9uhv.jpeg?q=70" style="width:53%">
+      <div class="container">
+        <h2>L C D</h2>
+        <p class="title">Price $5.99</p>
+        <p>lcd@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+    <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/painting/n/g/v/17-3-cw-146p-cw-crafts-world-original-imagm8featsfwzdg.jpeg?q=70" style="width:43%">
+      <div class="container">
+        <h2>Shiva Painting</h2>
+        <p class="title">Price $5.99</p>
+        <p>painting@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/z/g/o/l-jc22-hd-fs-black-jmc-pckt-jump-cuts-original-imagg3yxshqtv3dk.jpeg?q=70"  style="width:30%">
+      <div class="container">
+        <h2>T-Shirt</h2>
+        <p class="title">Price $5.99</p>
+        <p>tshirt@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src= "https://rukminim1.flixcart.com/image/612/612/kjrh2fk0/data-cable/lightning-cable/4/l/e/por-1080-konnect-l-portronics-original-imafz9hxhyggzpgw.jpeg?q=70" style="width:34%">
+      <div class="container">
+        <h2>Charging Card</h2>
+        <p class="title">Price $5.99</p>
+        <p>chargingcard@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/krdtlzk0/cycle/0/u/w/tribe-20t-matte-black-and-fluorescent-yellow-20-12-lifelong-original-imag56jkz6xhwahf.jpeg?q=70"  style="width:60%">
+      <div class="container">
+        <h2>Cycle</h2>
+        <p class="title">Price $100.99</p>
+        <p>cycle@fcart.com</p>
+        <p><button class="button">Add to cart</button></p>
+      </div>
+    </div>
+  </div>
+</div>    
+</body>
+</html>
+
+
